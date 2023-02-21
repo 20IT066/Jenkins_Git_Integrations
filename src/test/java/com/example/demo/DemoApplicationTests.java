@@ -37,7 +37,7 @@ class DemoApplicationTests {
     @Test
     public void greetingShouldReturnDefaultMessage() throws Exception {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/",
-                String.class)).contains("Hello, World from second branch 20it062");
+                String.class)).contains("Hello, World from jay Lakhani");
     }
 
     @Autowired
