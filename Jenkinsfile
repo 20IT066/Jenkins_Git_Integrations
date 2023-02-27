@@ -40,8 +40,7 @@ pipeline {
                     def dockerStop="docker stop ec2-index"
                     def dockerDelete="docker rm ec2-index"
                     sshagent(['ec2-user-key']) {
-                        sh "ssh -o StrictHostKeyChecking=no ec2-user@54.95.222.132 ${dockerStop}"
-                        sh "ssh -o StrictHostKeyChecking=no ec2-user@54.95.222.132 ${dockerDelete}"
+                       
                         sh "ssh -o StrictHostKeyChecking=no ec2-user@54.95.222.132 ${dockerCmd}"
 
 
