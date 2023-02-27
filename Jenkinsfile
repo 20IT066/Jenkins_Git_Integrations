@@ -33,7 +33,7 @@ pipeline {
         stage("deploy") {
             steps {
                 script {
-                    echo "deploying the application on ec2"
+                    echo "deploying the web application on ec2"
                     //gv.deployApp()
 
                     def dockerCmd="docker run  --name ec2-index -d pm310/simple-app:ra-2.0"
